@@ -1,0 +1,6 @@
+{
+  "name": "ColorNote: Notes & PDF",
+  "description": "Create rich color-coded notes, export professional PDFs, and install or build Android APK.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

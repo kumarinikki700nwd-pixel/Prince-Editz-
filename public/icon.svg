@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="note" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff" />
+      <stop offset="100%" stop-color="#f8fafc" />
+    </linearGradient>
+    <linearGradient id="accent1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#60a5fa" />
+    </linearGradient>
+    <linearGradient id="accent2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="accent4" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ef4444" />
+      <stop offset="100%" stop-color="#f87171" />
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-opacity="0.3" flood-color="#1e1b4b" />
+    </filter>
+  </defs>
+
+  <!-- Background rounded rect -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)" />
+
+  <!-- Notepad base with shadow -->
+  <g filter="url(#shadow)">
+    <rect x="96" y="80" width="320" height="360" rx="32" fill="url(#note)" />
+    
+    <!-- Spine binding top -->
+    <path d="M96 112 C96 94.3 110.3 80 128 80 L384 80 C401.7 80 416 94.3 416 112 L416 136 L96 136 Z" fill="#6366f1" />
+    
+    <!-- Color tags on right edge -->
+    <rect x="388" y="160" width="28" height="24" rx="6" fill="url(#accent1)" />
+    <rect x="388" y="196" width="28" height="24" rx="6" fill="url(#accent2)" />
+    <rect x="388" y="232" width="28" height="24" rx="6" fill="url(#accent3)" />
+    <rect x="388" y="268" width="28" height="24" rx="6" fill="url(#accent4)" />
+
+    <!-- Ruled lines / text representation -->
+    <rect x="140" y="170" width="160" height="18" rx="9" fill="#4338ca" />
+    <rect x="140" y="210" width="220" height="10" rx="5" fill="#cbd5e1" />
+    <rect x="140" y="238" width="200" height="10" rx="5" fill="#cbd5e1" />
+    <rect x="140" y="266" width="230" height="10" rx="5" fill="#cbd5e1" />
+    <rect x="140" y="294" width="180" height="10" rx="5" fill="#cbd5e1" />
+    
+    <!-- PDF badge in corner -->
+    <g transform="translate(136, 336)">
+      <rect width="104" height="48" rx="14" fill="#ef4444" />
+      <text x="52" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="900" font-size="22" fill="#ffffff" text-anchor="middle" letter-spacing="1">PDF</text>
+    </g>
+
+    <!-- Checkmark badge -->
+    <circle cx="340" cy="360" r="28" fill="#10b981" />
+    <path d="M328 360 L336 368 L354 350" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+  </g>
+</svg>
